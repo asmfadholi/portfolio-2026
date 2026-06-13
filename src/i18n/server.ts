@@ -1,11 +1,12 @@
 import en from "../../messages/en.json";
 import ja from "../../messages/ja.json";
+import id from "../../messages/id.json";
 
-export const locales = ["en", "ja"] as const;
+export const locales = ["en", "ja", "id"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "en";
 
-const allMessages = { en, ja } as const;
+const allMessages = { en, ja, id } as const;
 
 type RawMessages = typeof en;
 

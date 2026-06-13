@@ -33,8 +33,7 @@ export function Navbar() {
 
   useEffect(() => { setMenuOpen(false); }, [pathname]);
 
-  function switchLocale() {
-    const next = locale === "en" ? "ja" : "en";
+  function switchLocale(next: string) {
     document.cookie = `locale=${next};path=/;max-age=31536000`;
     const path = pathname.slice(`/${locale}`.length) || "/";
     router.push(`/${next}${path === "/" ? "" : path}`);
@@ -76,14 +75,17 @@ export function Navbar() {
 
           <div className="flex items-center gap-2">
             {/* Language switcher */}
-            <button
-              onClick={switchLocale}
-              className="text-xs font-semibold px-2.5 py-1 rounded-md border transition-all hover:border-[var(--accent)] hover:text-[var(--accent)]"
+            <select
+              value={locale}
+              onChange={(e) => switchLocale(e.target.value)}
+              className="text-xs font-semibold px-2 py-1 rounded-md border cursor-pointer appearance-none bg-transparent transition-all hover:border-[var(--accent)] hover:text-[var(--accent)]"
               style={{ borderColor: "var(--border)", color: "var(--text-secondary)" }}
               aria-label="Switch language"
             >
-              {locale === "en" ? "JA" : "EN"}
-            </button>
+              <option value="en">EN</option>
+              <option value="ja">JA</option>
+              <option value="id">ID</option>
+            </select>
 
             <ThemeSwitcher />
 

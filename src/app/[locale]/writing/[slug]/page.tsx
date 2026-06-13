@@ -12,7 +12,7 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  const locales = ["en", "ja"];
+  const locales = ["en", "ja", "id"];
   return locales.flatMap((locale) =>
     posts.map((p) => ({ locale, slug: p.slug }))
   );
@@ -26,7 +26,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 function formatDate(dateStr: string, locale: string) {
-  return new Date(dateStr).toLocaleDateString(locale === "ja" ? "ja-JP" : "en-US", {
+  const localeMap: Record<string, string> = { ja: "ja-JP", id: "id-ID" };
+  return new Date(dateStr).toLocaleDateString(localeMap[locale] ?? "en-US", {
     year: "numeric", month: "long", day: "numeric",
   });
 }

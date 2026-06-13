@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "projects": "Proyek",
+    "writing": "Tulisan"
+  },
+  "hero": {
+    "badge": "✦ Dibuat dengan Claude & alat AI",
+    "greeting": "Halo, saya",
+    "role": "Software Engineer yang berfokus pada pengembangan web.",
+    "bio": "Saya seorang Full-Stack Engineer dengan spesialisasi di bidang frontend. Saya memiliki ketertarikan pada performa aplikasi, design system, dan detail-detail kecil yang dapat menciptakan pengalaman pengguna yang lebih baik.",
+    "cta_work": "Lihat karya saya",
+    "cta_about": "Tentang saya"
+  },
+  "about": {
+    "label": "Tentang saya",
+    "title": "Fadholi",
+    "bio1": "Saya adalah full-stack engineer dengan fokus mendalam pada frontend. Saya peduli dengan performa, design system, dan detail kecil yang membuat produk terasa menyenangkan.",
+    "bio2": "Saya sangat bersemangat dalam performance engineering, design system, dan membangun antarmuka yang terasa native dan cepat. Saya percaya produk terbaik adalah yang tidak membuat kamu sadar akan rekayasa di baliknya — semuanya berjalan begitu saja.",
+    "bio3": "Di waktu luang, saya senang fotografi, jogging, dan ski. Saya juga suka mempelajari teknologi baru melalui dokumentasi teknis serta sesekali berkontribusi pada proyek open source.",
+    "skills_title": "Keahlian & Teknologi",
+    "experience_title": "Pengalaman",
+    "timeline": [
+      {
+        "year": "Jul 2024 – Sekarang",
+        "role": "Senior Software Engineer",
+        "company": "Money Forward, Inc. · Tokyo, Jepang",
+        "description": "Bekerja dalam pengembangan perangkat lunak di Money Forward, perusahaan fintech terkemuka di Jepang. Stack: Next.js, React, Kotlin, TypeScript, AWS, Datadog, Rollbar, CircleCI."
+      },
+      {
+        "year": "Mei 2023 – Jun 2024",
+        "role": "Senior Software Engineer",
+        "company": "Solafune, Inc. · Tokyo, Jepang",
+        "description": "Mengembangkan fitur diskusi, Google SSO, sistem notifikasi, topik yang disematkan, dan profil pengguna. Menyiapkan deployment otomatis via GitHub Actions dan AWS App Runner, serta integrasi unit testing CI pada pull request. Stack: Next.js, React, Python, AWS App Runner, Sentry."
+      },
+      {
+        "year": "Agu 2020 – Mei 2023",
+        "role": "Software Engineer",
+        "company": "Tokopedia · Jakarta, Indonesia",
+        "description": "Frontend engineer di platform e-commerce terbesar Indonesia. Membangun dan memelihara aplikasi untuk seller (Promo, Campaign, Tax, Thematic, Voucher) menggunakan React dan Apollo GraphQL. Menangani deployment PWA ke Microsoft Store dan membangun alat produktivitas & monitoring internal (New Relic, Grafana, Scalyr)."
+      },
+      {
+        "year": "Jan 2020 – Agu 2020",
+        "role": "Software Engineer",
+        "company": "Biznis ID · Jakarta, Indonesia",
+        "description": "Membangun platform e-learning dari nol dengan Nuxt.js, mengintegrasikan Midtrans untuk pembayaran dan FlowPlayer untuk pemutaran video."
+      },
+      {
+        "year": "Mar 2019 – Des 2019",
+        "role": "Squad Lead Engineer – Frontend",
+        "company": "Jojonomic · Jakarta, Indonesia",
+        "description": "Memimpin tim frontend, menerjemahkan kebutuhan bisnis menjadi tugas teknis. Mengembangkan beberapa produk (Jojoflow, Jojoexpense, Jojopayroll, Jojosales) dan aplikasi Costcenter on-premise menggunakan Vue.js."
+      },
+      {
+        "year": "Jun 2018 – Feb 2019",
+        "role": "Software Engineer",
+        "company": "Jojonomic · Jakarta, Indonesia",
+        "description": "Migrasi tech stack dari jQuery ke Vue.js. Menginisiasi component library yang dipublikasikan ke npm dan memperkenalkan arsitektur micro frontend di seluruh aplikasi."
+      },
+      {
+        "year": "Mar 2018 – Jun 2018",
+        "role": "Software Engineer",
+        "company": "Urbanhire · Jakarta, Indonesia",
+        "description": "Merombak halaman landing dan membangun dashboard rekrutmen menggunakan Vue.js."
+      },
+      {
+        "year": "Okt 2017 – Feb 2018",
+        "role": "Asisten Peneliti",
+        "company": "Institut Teknologi Bandung · Bandung, Indonesia",
+        "description": "Penelitian di bawah program P3MI-ITB tentang multiplikasi tunas dan laju pertumbuhan dalam bioreaktor perendaman sementara."
+      }
+    ]
+  },
+  "projects": {
+    "label": "Karya pilihan",
+    "title": "Proyek",
+    "description": "Kumpulan proyek yang telah saya bangun — dari design system dan alat performa hingga aplikasi full-stack dan eksperimen.",
+    "featured": "Unggulan",
+    "other": "Proyek lainnya",
+    "items": {
+      "portfolio-2026": {
+        "title": "Portfolio 2026",
+        "description": "Portfolio pribadi minimalis dengan multi-tema yang dibangun dengan Next.js, TypeScript, TailwindCSS, dan Framer Motion. Menampilkan lima tema warna dan transisi halaman yang halus."
+      },
+      "ja-learning": {
+        "title": "JA Learning",
+        "description": "Platform belajar bahasa Jepang untuk pelajar tingkat menengah. Menampilkan pelajaran terstruktur dalam 11 bab, 1.400+ kosakata, instruksi kanji, kuis, dan panduan pengucapan audio."
+      },
+      "transfr": {
+        "title": "Transfr",
+        "description": "Aplikasi web yang memungkinkan transfer saldo dompet digital antar platform e-wallet Indonesia populer termasuk OVO, Dana, GoPay, dan LinkAja."
+      },
+      "desa-wisata": {
+        "title": "Desa Wisata",
+        "description": "Platform web destinasi wisata yang menampilkan desa-desa lokal Indonesia sebagai tujuan perjalanan, membantu wisatawan menemukan dan menjelajahi spot wisata pedesaan."
+      }
+    }
+  },
+  "writing": {
+    "label": "Pemikiran & pembelajaran",
+    "title": "Tulisan",
+    "description": "Saya menulis tentang frontend engineering, performa web, design system, dan hal-hal yang saya pelajari di sepanjang jalan.",
+    "under_construction": "Sedang Dibangun",
+    "coming_soon": "Tulisan akan segera hadir. Cek kembali nanti.",
+    "back": "Kembali ke tulisan",
+    "min_read": "menit baca"
+  },
+  "footer": {
+    "role": "Software Engineer",
+    "built_with": "Dibangun dengan bantuan Claude."
+  },
+  "common": {
+    "scroll": "gulir",
+    "all_projects": "Semua proyek",
+    "all_posts": "Semua tulisan"
+  }
+}
