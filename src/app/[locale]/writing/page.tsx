@@ -1,15 +1,21 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations } from "@/i18n/server";
 import { AnimateIn } from "@/components/ui/AnimateIn";
 import { Construction } from "lucide-react";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("writing");
+interface Props {
+  params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = getTranslations(locale, "writing");
   return { title: t("title") };
 }
 
-export default async function WritingPage() {
-  const t = await getTranslations("writing");
+export default async function WritingPage({ params }: Props) {
+  const { locale } = await params;
+  const t = getTranslations(locale, "writing");
 
   return (
     <div className="pt-24 pb-20 max-w-3xl mx-auto px-6">

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar } from "lucide-react";
-import { getTranslations } from "next-intl/server";
+import { getTranslations } from "@/i18n/server";
 import { posts } from "@/lib/data";
 import { Tag } from "@/components/ui/Tag";
 import { AnimateIn } from "@/components/ui/AnimateIn";
@@ -36,7 +36,7 @@ export default async function PostPage({ params }: Props) {
   const post = posts.find((p) => p.slug === slug);
   if (!post) notFound();
 
-  const t = await getTranslations("writing");
+  const t = getTranslations(locale, "writing");
 
   return (
     <div className="pt-24 pb-20 max-w-2xl mx-auto px-6">

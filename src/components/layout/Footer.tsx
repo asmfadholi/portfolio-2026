@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Mail } from "lucide-react";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations, useLocale } from "@/i18n/context";
 import { GithubIcon, TwitterIcon, LinkedinIcon } from "@/components/ui/SocialIcons";
 import { personal } from "@/lib/data";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations } from "@/i18n/context";
 import { AnimateIn } from "@/components/ui/AnimateIn";
 import { Construction } from "lucide-react";
 

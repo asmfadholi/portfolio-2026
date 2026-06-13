@@ -1,7 +1,26 @@
-import createMiddleware from "next-intl/middleware";
-import { routing } from "./i18n/routing";
+import { NextRequest, NextResponse } from "next/server";
 
-export default createMiddleware(routing);
+const locales = ["en", "ja"];
+const defaultLocale = "en";
+
+export function proxy(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+
+  const hasLocale = locales.some(
+    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+  );
+
+  if (!hasLocale) {
+    const cookieLocale = request.cookies.get("locale")?.value;
+    const locale =
+      cookieLocale && locales.includes(cookieLocale)
+        ? cookieLocale
+        : defaultLocale;
+    const url = request.nextUrl.clone();
+    url.pathname = `/${locale}${pathname === "/" ? "" : pathname}`;
+    return NextResponse.redirect(url);
+  }
+}
 
 export const config = {
   matcher: ["/((?!_next|_vercel|.*\\..*).*)"],

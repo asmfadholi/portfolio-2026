@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations } from "@/i18n/server";
 import { Avatar } from "@/components/ui/Avatar";
 import { AnimateIn } from "@/components/ui/AnimateIn";
 import { personal, skills } from "@/lib/data";
@@ -7,13 +7,19 @@ import { MapPin, Mail } from "lucide-react";
 import { GithubIcon, TwitterIcon, LinkedinIcon } from "@/components/ui/SocialIcons";
 import { Tag } from "@/components/ui/Tag";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("about");
+interface Props {
+  params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = getTranslations(locale, "about");
   return { title: t("label") };
 }
 
-export default async function AboutPage() {
-  const t = await getTranslations("about");
+export default async function AboutPage({ params }: Props) {
+  const { locale } = await params;
+  const t = getTranslations(locale, "about");
   const timeline = t.raw("timeline") as Array<{
     year: string; role: string; company: string; description: string;
   }>;

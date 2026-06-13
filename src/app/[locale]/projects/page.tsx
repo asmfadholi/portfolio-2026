@@ -1,16 +1,22 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations } from "@/i18n/server";
 import { AnimateIn } from "@/components/ui/AnimateIn";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 import { projects } from "@/lib/data";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("projects");
+interface Props {
+  params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = getTranslations(locale, "projects");
   return { title: t("title") };
 }
 
-export default async function ProjectsPage() {
-  const t = await getTranslations("projects");
+export default async function ProjectsPage({ params }: Props) {
+  const { locale } = await params;
+  const t = getTranslations(locale, "projects");
   const featured = projects.filter((p) => p.featured);
   const rest = projects.filter((p) => !p.featured);
 

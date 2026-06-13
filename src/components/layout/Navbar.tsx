@@ -1,9 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useTranslations, useLocale } from "next-intl";
-import { useRouter } from "@/i18n/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { useTranslations, useLocale } from "@/i18n/context";
 import { ThemeSwitcher } from "@/components/ui/ThemeSwitcher";
 import { Avatar } from "@/components/ui/Avatar";
 import { personal } from "@/lib/data";
@@ -36,8 +35,9 @@ export function Navbar() {
 
   function switchLocale() {
     const next = locale === "en" ? "ja" : "en";
-    const path = pathname.replace(`/${locale}`, "") || "/";
-    router.replace(path, { locale: next });
+    document.cookie = `locale=${next};path=/;max-age=31536000`;
+    const path = pathname.slice(`/${locale}`.length) || "/";
+    router.push(`/${next}${path === "/" ? "" : path}`);
   }
 
   return (

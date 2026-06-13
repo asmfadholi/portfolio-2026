@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Mail } from "lucide-react";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations, useLocale } from "@/i18n/context";
 import { GithubIcon, TwitterIcon, LinkedinIcon } from "@/components/ui/SocialIcons";
 import { Avatar } from "@/components/ui/Avatar";
 import { personal } from "@/lib/data";

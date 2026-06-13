@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
 import "../globals.css";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { PageTransition } from "@/components/layout/PageTransition";
-import { routing } from "@/i18n/routing";
+import { I18nProvider } from "@/i18n/context";
+import { getMessages, locales } from "@/i18n/server";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -26,11 +25,11 @@ interface Props {
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
 
-  if (!(routing.locales as readonly string[]).includes(locale)) {
+  if (!(locales as readonly string[]).includes(locale)) {
     notFound();
   }
 
-  const messages = await getMessages();
+  const messages = getMessages(locale) as Record<string, Record<string, unknown>>;
 
   return (
     <html lang={locale} className={`${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
@@ -42,7 +41,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         />
       </head>
       <body className="min-h-screen flex flex-col" style={{ backgroundColor: "var(--bg)", color: "var(--text-primary)" }}>
-        <NextIntlClientProvider messages={messages}>
+        <I18nProvider locale={locale} messages={messages}>
           <ThemeProvider>
             <Navbar />
             <main className="flex-1">
@@ -50,7 +49,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             </main>
             <Footer />
           </ThemeProvider>
-        </NextIntlClientProvider>
+        </I18nProvider>
       </body>
     </html>
   );

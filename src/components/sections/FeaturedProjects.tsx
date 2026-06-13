@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations, useLocale } from "@/i18n/context";
 import { projects } from "@/lib/data";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 import { AnimateIn } from "@/components/ui/AnimateIn";
