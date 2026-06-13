@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "about": "自己紹介",
+    "projects": "プロジェクト",
+    "writing": "ブログ"
+  },
+  "hero": {
+    "badge": "✦ ClaudeとAIツールで制作中",
+    "greeting": "こんにちは、",
+    "role": "ソフトウェアエンジニア — Webにこだわっています。",
+    "bio": "フロントエンドに深く特化したフルスタックエンジニアです。パフォーマンス、デザインシステム、そしてプロダクトをより良くする細部のこだわりを大切にしています。",
+    "cta_work": "作品を見る",
+    "cta_about": "自己紹介へ"
+  },
+  "about": {
+    "label": "自己紹介",
+    "title": "Fadholi",
+    "bio1": "フロントエンドに深く特化したフルスタックエンジニアです。パフォーマンス、デザインシステム、そしてプロダクトをより良くする細部のこだわりを大切にしています。",
+    "bio2": "特にパフォーマンスエンジニアリング、デザインシステム、そしてネイティブアプリのように感じられる高速なインターフェースの構築に情熱を持っています。最高のプロダクトとは、エンジニアリングを意識させないもの――すべてがただ動く、そういうものだと信じています。",
+    "bio3": "コード以外では、写真撮影、ジョギング、スキー、そして時間があるときにオープンソースへの貢献を楽しんでいます。",
+    "skills_title": "スキル・技術",
+    "experience_title": "経歴",
+    "timeline": [
+      {
+        "year": "2024年7月〜現在",
+        "role": "シニアソフトウェアエンジニア",
+        "company": "Money Forward, Inc. · 東京、日本",
+        "description": "日本大手フィンテック企業 Money Forward にてソフトウェア開発を担当。スタック：Next.js、React、Kotlin、TypeScript、AWS、Datadog、Rollbar、CircleCI。"
+      },
+      {
+        "year": "2023年5月〜2024年6月",
+        "role": "シニアソフトウェアエンジニア",
+        "company": "Solafune, Inc. · 東京、日本",
+        "description": "ディスカッション機能・Google SSO・通知機能・ピン留めトピック・ユーザープロフィールを開発。GitHub Actions と AWS App Runner を活用した自動デプロイを構築し、プルリクエスト時のユニットテスト自動実行も整備。スタック：Next.js、React、Python、AWS App Runner、Sentry。"
+      },
+      {
+        "year": "2020年8月〜2023年5月",
+        "role": "ソフトウェアエンジニア",
+        "company": "Tokopedia · ジャカルタ、インドネシア",
+        "description": "インドネシア最大の EC プラットフォームにてフロントエンドエンジニアとして勤務。React・Apollo GraphQL を使用したセラー向けアプリ（プロモ、キャンペーン、税務、テーマ、バウチャー）を開発・保守。Microsoft Store への PWA デプロイや社内モニタリングツール（New Relic、Grafana、Scalyr）の構築も担当。"
+      },
+      {
+        "year": "2020年1月〜2020年8月",
+        "role": "ソフトウェアエンジニア",
+        "company": "Biznis ID · ジャカルタ、インドネシア",
+        "description": "Nuxt.js を用いた eラーニングプラットフォームをゼロから構築。Midtrans（決済）および FlowPlayer（動画再生）をサードパーティ連携として実装。"
+      },
+      {
+        "year": "2019年3月〜2019年12月",
+        "role": "スクワッドリードエンジニア – フロントエンド",
+        "company": "Jojonomic · ジャカルタ、インドネシア",
+        "description": "フロントエンドチームをリードし、ビジネス要件を技術タスクに落とし込む。Vue.js を使用した複数プロダクト（Jojoflow、Jojoexpense、Jojopayroll、Jojosales）とオンプレミスの Costcenter アプリを開発。"
+      },
+      {
+        "year": "2018年6月〜2019年2月",
+        "role": "ソフトウェアエンジニア",
+        "company": "Jojonomic · ジャカルタ、インドネシア",
+        "description": "jQuery から Vue.js への技術スタック移行を主導。npm に公開したコンポーネントライブラリを立ち上げ、マイクロフロントエンドアーキテクチャを導入。"
+      },
+      {
+        "year": "2018年3月〜2018年6月",
+        "role": "ソフトウェアエンジニア",
+        "company": "Urbanhire · ジャカルタ、インドネシア",
+        "description": "ランディングページのリニューアルと Vue.js を使った採用管理ダッシュボードの開発を担当。"
+      },
+      {
+        "year": "2017年10月〜2018年2月",
+        "role": "リサーチアシスタント",
+        "company": "Institut Teknologi Bandung · バンドン、インドネシア",
+        "description": "P3MI-ITB プログラムのもと、一時浸漬型バイオリアクターにおけるシュート増殖・生長速度に関する研究に従事。"
+      }
+    ]
+  },
+  "projects": {
+    "label": "制作物",
+    "title": "プロジェクト",
+    "description": "デザインシステムやパフォーマンスツールから、フルスタックアプリまで、制作したプロジェクトのコレクションです。",
+    "featured": "注目プロジェクト",
+    "other": "その他のプロジェクト",
+    "items": {
+      "portfolio-2026": {
+        "title": "ポートフォリオ 2026",
+        "description": "Next.js・TypeScript・TailwindCSS・Framer Motionで構築した、ミニマルでマルチテーマ対応のポートフォリオ。5種類のカラーテーマとスムーズなページ遷移を特徴とします。"
+      },
+      "ja-learning": {
+        "title": "JA Learning",
+        "description": "中級者向けの日本語学習プラットフォーム。11章にわたる体系的なレッスン、1,400語以上の語彙、漢字学習、クイズ、音声発音ガイドを提供します。"
+      },
+      "transfr": {
+        "title": "Transfr",
+        "description": "OVO・Dana・GoPay・LinkAjaなど、インドネシアの主要電子ウォレット間で残高をシームレスに送金できるWebアプリ。"
+      },
+      "desa-wisata": {
+        "title": "Desa Wisata",
+        "description": "インドネシアの地方農村を観光地として紹介する観光情報Webプラットフォーム。旅行者が農村観光スポットを発見・探索できるよう支援します。"
+      }
+    }
+  },
+  "writing": {
+    "label": "思考と学び",
+    "title": "ブログ",
+    "description": "フロントエンドエンジニアリング、Webパフォーマンス、デザインシステムについて書いています。",
+    "under_construction": "準備中",
+    "coming_soon": "ブログは近日公開予定です。またご確認ください。",
+    "back": "ブログに戻る",
+    "min_read": "分で読めます"
+  },
+  "footer": {
+    "role": "ソフトウェアエンジニア",
+    "built_with": "Claudeのサポートを受けて構築。"
+  },
+  "common": {
+    "scroll": "スクロール",
+    "all_projects": "全プロジェクト",
+    "all_posts": "全記事"
+  }
+}

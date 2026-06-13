@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "writing": "Writing"
+  },
+  "hero": {
+    "badge": "✦ Crafting with Claude & AI tools",
+    "greeting": "Hi, I'm",
+    "role": "Software Engineer — I care about the web.",
+    "bio": "I'm a full-stack engineer with a deep focus on the frontend. I care about performance, design systems, and the small details that make products feel delightful.",
+    "cta_work": "View my work",
+    "cta_about": "About me"
+  },
+  "about": {
+    "label": "About me",
+    "title": "Fadholi",
+    "bio1": "I'm a full-stack engineer with a deep focus on the frontend. I care about performance, design systems, and the small details that make products feel delightful.",
+    "bio2": "I'm particularly passionate about performance engineering, design systems, and building interfaces that feel native and fast. I believe the best products are the ones where you don't notice the engineering — everything just works.",
+    "bio3": "Outside of code, I enjoy photography, jogging, skiing, reading technical documentations and contributing to open-source projects when time allows.",
+    "skills_title": "Skills & Technologies",
+    "experience_title": "Experience",
+    "timeline": [
+      {
+        "year": "Jul 2024 – Present",
+        "role": "Senior Software Engineer",
+        "company": "Money Forward, Inc. · Tokyo, Japan",
+        "description": "Working on software development at Money Forward, a leading Japanese fintech company. Stack: Next.js, React, Kotlin, TypeScript, AWS, Datadog, Rollbar, CircleCI."
+      },
+      {
+        "year": "May 2023 – Jun 2024",
+        "role": "Senior Software Engineer",
+        "company": "Solafune, Inc. · Tokyo, Japan",
+        "description": "Developed discussion features, Google SSO, notification system, pinned topics, and user profiles. Set up automated deployment via GitHub Actions and AWS App Runner, and integrated CI unit testing on pull requests. Stack: Next.js, React, Python, AWS App Runner, Sentry."
+      },
+      {
+        "year": "Aug 2020 – May 2023",
+        "role": "Software Engineer",
+        "company": "Tokopedia · Jakarta, Indonesia",
+        "description": "Frontend engineer on Indonesia's largest e-commerce platform. Built and maintained seller-facing apps (Promo, Campaign, Tax, Thematic, Voucher) using React and Apollo GraphQL. Handled PWA deployment to Microsoft Store and built internal productivity & monitoring tools (New Relic, Grafana, Scalyr)."
+      },
+      {
+        "year": "Jan 2020 – Aug 2020",
+        "role": "Software Engineer",
+        "company": "Biznis ID · Jakarta, Indonesia",
+        "description": "Built an e-learning platform from scratch with Nuxt.js, integrating Midtrans for payments and FlowPlayer for video playback."
+      },
+      {
+        "year": "Mar 2019 – Dec 2019",
+        "role": "Squad Lead Engineer – Frontend",
+        "company": "Jojonomic · Jakarta, Indonesia",
+        "description": "Led the frontend team, translating business requirements into technical tasks. Developed multiple products (Jojoflow, Jojoexpense, Jojopayroll, Jojosales) and an on-premise Costcenter app using Vue.js."
+      },
+      {
+        "year": "Jun 2018 – Feb 2019",
+        "role": "Software Engineer",
+        "company": "Jojonomic · Jakarta, Indonesia",
+        "description": "Migrated the tech stack from jQuery to Vue.js. Initiated a component library published to npm and introduced micro frontend architecture across the apps."
+      },
+      {
+        "year": "Mar 2018 – Jun 2018",
+        "role": "Software Engineer",
+        "company": "Urbanhire · Jakarta, Indonesia",
+        "description": "Revamped the landing page and built a recruitment dashboard using Vue.js."
+      },
+      {
+        "year": "Oct 2017 – Feb 2018",
+        "role": "Research Assistant",
+        "company": "Institut Teknologi Bandung · Bandung, Indonesia",
+        "description": "Research under the P3MI-ITB program on shoot multiplication and growth rates in temporary immersion bioreactors."
+      }
+    ]
+  },
+  "projects": {
+    "label": "Selected work",
+    "title": "Projects",
+    "description": "A collection of projects I've built — from design systems and performance tooling to full-stack applications and experiments.",
+    "featured": "Featured",
+    "other": "Other projects",
+    "items": {
+      "portfolio-2026": {
+        "title": "Portfolio 2026",
+        "description": "A minimal, multi-themed personal portfolio built with Next.js, TypeScript, TailwindCSS, and Framer Motion. Features five color themes and smooth page transitions."
+      },
+      "ja-learning": {
+        "title": "JA Learning",
+        "description": "A Japanese language learning platform for intermediate learners. Features structured lessons across 11 chapters, 1,400+ vocabulary words, kanji instruction, quizzes, and audio pronunciation guides."
+      },
+      "transfr": {
+        "title": "Transfr",
+        "description": "A web app that enables seamless transfer of digital wallet balances between popular Indonesian e-wallet platforms including OVO, Dana, GoPay, and LinkAja."
+      },
+      "desa-wisata": {
+        "title": "Desa Wisata",
+        "description": "A tourism destination web platform showcasing local Indonesian villages as travel destinations, helping travelers discover and explore rural tourism spots."
+      }
+    }
+  },
+  "writing": {
+    "label": "Thoughts & learnings",
+    "title": "Writing",
+    "description": "I write about frontend engineering, web performance, design systems, and the things I learn along the way.",
+    "under_construction": "Under Construction",
+    "coming_soon": "Writing is coming soon. Check back later.",
+    "back": "Back to writing",
+    "min_read": "min read"
+  },
+  "footer": {
+    "role": "Software Engineer",
+    "built_with": "Built with the assistance of Claude."
+  },
+  "common": {
+    "scroll": "scroll",
+    "all_projects": "All projects",
+    "all_posts": "All posts"
+  }
+}
