@@ -31,7 +31,7 @@ export const projects: Project[] = [
     description:
       "A minimal, multi-themed personal portfolio built with Next.js, TypeScript, TailwindCSS, and Framer Motion. Features five color themes and smooth page transitions.",
     tags: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
-    url: "https://asmfadholi.web.app",
+    url: "https://asmfadholi.vercel.app",
     featured: true,
     year: 2026,
   },
