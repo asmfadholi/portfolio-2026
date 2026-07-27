@@ -94,6 +94,10 @@
       "desa-wisata": {
         "title": "Desa Wisata",
         "description": "A tourism destination web platform showcasing local Indonesian villages as travel destinations, helping travelers discover and explore rural tourism spots."
+      },
+      "supabase-auth-app": {
+        "title": "Supabase Auth App",
+        "description": "A full-stack authentication starter app built with Supabase, featuring secure login, session management, and a clean, minimal UI."
       }
     }
   },

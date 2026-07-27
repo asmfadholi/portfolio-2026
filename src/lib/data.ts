@@ -69,7 +69,7 @@ export const projects: Project[] = [
     slug: "supabase-auth-app",
     title: "Supabase Auth App",
     description:
-      "A full-stack authentication starter app built with Supabase, featuring secure login, session management, and a clean, minimal UI. Japanese learning platform for intermediate learners. Features structured lessons across 11 chapters, 1,400+ vocabulary words, kanji instruction, quizzes, and audio pronunciation guides.",
+      "A full-stack authentication starter app built with Supabase, featuring secure login, session management, and a clean, minimal UI.",
     tags: ["Next.js", "Supabase", "TypeScript", "Vercel"],
     url: "https://my-supabase-app-dusky-five.vercel.app/en/login",
     featured: true,

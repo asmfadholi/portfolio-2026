@@ -94,6 +94,10 @@
       "desa-wisata": {
         "title": "Desa Wisata",
         "description": "Platform web destinasi wisata yang menampilkan desa-desa lokal Indonesia sebagai tujuan perjalanan, membantu wisatawan menemukan dan menjelajahi spot wisata pedesaan."
+      },
+      "supabase-auth-app": {
+        "title": "Supabase Auth App",
+        "description": "Aplikasi starter autentikasi full-stack yang dibangun dengan Supabase, menampilkan login yang aman, manajemen sesi, dan UI yang bersih dan minimalis."
       }
     }
   },

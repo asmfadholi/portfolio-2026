@@ -94,6 +94,10 @@
       "desa-wisata": {
         "title": "Desa Wisata",
         "description": "インドネシアの地方農村を観光地として紹介する観光情報Webプラットフォーム。旅行者が農村観光スポットを発見・探索できるよう支援します。"
+      },
+      "supabase-auth-app": {
+        "title": "Supabase 認証アプリ",
+        "description": "Supabaseで構築されたフルスタック認証スターターアプリ。安全なログイン、セッション管理、シンプルでミニマルなUIを備えています。"
       }
     }
   },
